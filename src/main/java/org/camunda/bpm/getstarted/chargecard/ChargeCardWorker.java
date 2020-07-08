@@ -6,7 +6,7 @@ import java.net.URI;
 
 import org.camunda.bpm.client.ExternalTaskClient;
 
-//use below URL in postmant with json data(input.txt) with post request .
+//use below URL in postmant with json data(resources/input_data.json) with post request .
 
 //http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start
 
