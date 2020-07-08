@@ -1,0 +1,17 @@
+{
+	"variables": {
+		"amount": {
+			"value": 555,
+			"type": "long"
+		},
+		"item": {
+			"value": "item-xyz"
+		},
+		"name": {
+			"value": "ravi kumar"
+		},
+		"city": {
+			"value": "Sasaram"
+		}
+	}
+}

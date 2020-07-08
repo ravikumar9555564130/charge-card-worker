@@ -6,6 +6,10 @@ import java.net.URI;
 
 import org.camunda.bpm.client.ExternalTaskClient;
 
+//use below URL in postmant with json data(input.txt) with post request .
+
+//http://localhost:8080/engine-rest/process-definition/key/payment-retrieval/start
+
 public class ChargeCardWorker {
 	private final static Logger LOGGER = Logger.getLogger(ChargeCardWorker.class.getName());
 
@@ -23,9 +27,13 @@ public class ChargeCardWorker {
 					// Get a process variable
 					String item = (String) externalTask.getVariable("item");
 					Long amount = (Long) externalTask.getVariable("amount");
+					String name = (String) externalTask.getVariable("name");
+					String city = (String) externalTask.getVariable("city");
 
 					LOGGER.info(
 							"Charging credit card with an amount of '" + amount + "'€ for the item '" + item + "'...");
+					LOGGER.info(
+							" name :: " + name + " city:: " + city + "'...");
 
 					try {
 						Desktop.getDesktop()
